@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import PasswordInput from './PasswordInput';
-
+import logo from '../assets/logo.png';
 const Login = () => {
   const [loginMethod, setLoginMethod] = useState('email'); // 'email' or 'username'
 
@@ -13,18 +13,16 @@ const Login = () => {
 
   return (
     <div className="w-full max-w-6xl bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
-      {/* Left Side - Logo (same as signup) */}
-      <div className="w-full md:w-1/2 bg-purple-600 flex items-center justify-center p-8">
-        <div className="text-white text-center">
+      <div className="text-white text-center">
           <img 
-            src="/logo.svg" 
+            src={logo} 
             alt="Company Logo" 
             className="h-24 w-24 mx-auto mb-4"
           />
-          <h2 className="text-3xl font-bold mb-2">Your Logo</h2>
-          <p className="text-purple-100">Welcome back to our platform</p>
         </div>
-      </div>
+      {/* Left Side - Logo (same as signup) */}
+      <div className="w-full md:w-1/2 bg-purple-600 flex items-center justify-center p-8">
+        </div>
 
       {/* Right Side - Form */}
       <div className="w-full md:w-1/2 p-8 md:p-12">
@@ -72,7 +70,7 @@ const Login = () => {
             <PasswordInput
               id='password'
               name='password'
-              label='Password'
+              type= 'password'
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
               required
             />
