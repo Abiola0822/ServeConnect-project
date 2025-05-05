@@ -202,7 +202,55 @@ const LandingPage = () => {
                     </h1>
                   </header>
                 </div> 
-                
+
+
+                { /* Volunteers Feedback Section */ }
+                <div class="py-12 bg-gray-200">
+                  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Section Header */}
+                    <div class="text-left mb-10">
+                      <h2 class="text-10xl font-bold text-black sm:text-7xl">Volunteers Feedback</h2>
+                      <p class="mt-4 text-lg text-gray-700">
+                        Read what our volunteers have to say about their experience with us:
+                        </p>
+                        </div>
+                        
+                        {/* Testimonials Grid */}
+                        <div class="grid gap-8 md:grid-cols-2">
+                          {/* Testimonial 1 */}
+                          <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-semibold text-gray-900">Emily Johnson</h3>
+                            <p class="mt-2 text-gray-600">
+                              "I found the perfect volunteer opportunity that aligned with my passion for helping others. Thank you for the amazing experience!"
+                              </p>
+                              </div>
+                              
+                              {/* Testimonial 2 */}
+                              <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="text-lg font-semibold text-gray-900">Sophia Brown</h3>
+                                <p class="mt-2 text-gray-600">
+                                  "I've had a fantastic time volunteering with this app. The support from the team and the impact I've been able to make have been truly fulfilling."
+                                  </p>
+                                  </div>
+                                  
+                                  {/* Testimonial 3 */}
+                                  <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h3 class="text-lg font-semibold text-gray-900">Michael Smith</h3>
+                                    <p class="mt-2 text-gray-600">
+                                      "Volunteering through this platform has been incredibly rewarding. I appreciate the variety of opportunities available and the seamless process of getting involved."
+                                      </p>
+                                      </div>
+                                      
+                                      {/* Testimonial 4 */}
+                                      <div class="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 class="text-lg font-semibold text-gray-900">Daniel Wilson</h3>
+                                        <p class="mt-2 text-gray-600">
+                                          "Being a volunteer through this platform has been a game-changer for me. The opportunities provided have allowed me to grow personally and contribute to causes I care about."
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                 
                 <div className="max-w-7xl mx-auto px-4 py-8 md:py-16">
                   {/* Three Column Grid */}
