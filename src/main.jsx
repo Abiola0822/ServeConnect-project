@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import App from './App'
 import LandingPage  from './components/LandingPage'
 import Login from './components/Login'
@@ -13,10 +13,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <div>Error Page</div>,
     children: [
-      { index: true, element: <Login /> }, 
-      { path: "login", element: <Login /> },
-      { path: "signup", element: <Signup /> },
-      { path: "Landingpage", element: <LandingPage /> }, // Default to login
+      { index: true, path: "/", element: <LandingPage /> }, 
+      { path: "/login", element: <Login /> },
+      { path: "/signup", element: <Signup /> },
+      { path: "*", element: <Navigate to="/" />},
     ]
   }
 ])
